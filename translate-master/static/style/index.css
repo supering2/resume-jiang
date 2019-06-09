@@ -1,0 +1,62 @@
+body {
+  background: white;
+  margin: 0px;
+}
+.title {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background: #2196f3;
+  color: white;
+  font-size: 24px;
+}
+
+.name {
+  margin-left: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  color: #2196f3;
+  padding: 16px;
+  border-bottom: 1px dashed #aaa;
+}
+
+.swap {
+  display: flex;
+  align-items: center;
+}
+
+.from {
+  width: 100%;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+textarea {
+  /* 盒子模型有两种 ， 由box-sizing 确定 */
+  box-sizing: border-box;
+  border: none;
+  /* border-bottom: 1px dashed rgb(185, 179, 179); */
+  padding: 16px;
+  width: 375px;
+  /* 禁止拖动 */
+  resize: none;
+  font-size: 18px;
+}
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+
+.to {
+  margin-top: 12px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+.item {
+  padding: 8px 16px;
+  border-bottom: 1px solid #eee;
+}

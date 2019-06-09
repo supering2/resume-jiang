@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 这里引入了  Material Icons， 可以把icon当做特殊的字体-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./music.css">
+  
+</head>
+<body>
+<!-- <div><i className="material-icons">g_translate</i></div> -->
+  <!-- 1.搜集图标
+  2.搜集音乐
+  3.写HTML
+  4.写css
+  5.写js -->
+<div class="music-player">
+    <div class="head">
+      <div class="head-left">
+        <div class="song-name">My Heart Will Go On </div>
+        <div class="singer-name">Celine Dion </div>
+      </div>
+      <div class="share">
+        <i class="material-icons head-right">share</i>
+      </div>
+    </div>
+    <div class="music-body">
+      <img class="photo" src="./images/pan.png" alt="">
+    </div>
+    <div class="music-footer">
+      <i class="material-icons icon-previous">skip_previous</i>
+      <!-- 播放 -->
+      <i class="material-icons icon-play">play_circle_outline</i>
+      <!-- 暂停 -->
+      <i class="material-icons hide icon-pause">pause_circle_outline</i>
+      <i class="material-icons icon-next">skip_next</i>
+    </div>
+    <audio id='audio' src="./1.mp3" >
+      <!-- <source src="horse.ogg">
+      <source src="horse.mp3"> -->
+    </audio>
+    <!-- <audio src=""></audio> -->
+  </div>
+</body>
+<script src="./utils.js"></script>
+<script src="./music.js"></script>
+</html>

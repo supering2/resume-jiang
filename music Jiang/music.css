@@ -1,0 +1,67 @@
+body{
+  margin: 0;
+}
+.music-player {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #212121;
+  color:#F5F5F5;
+}
+.material-icons{
+  font-size: 50px;
+  color: #BDBDBD;
+;
+}
+.head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.head-left{
+  margin-right: 2px;
+  padding: 5px;
+}
+.head-right {
+  margin-right: 5px;
+  font-size: 40px;
+}
+.music-body{
+  
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.photo{
+  width:300px;
+  height:300px;
+  margin-top: 100px;
+  animation:rotate 8s linear infinite;
+}
+.music-footer{
+  display: flex;
+  /* flex-direction: center; */
+  justify-content: center;
+  margin-bottom: 30px;
+
+}
+.icon-play, .icon-pause{
+  margin: 0 25px;
+}
+
+.hide{
+  display: none;
+}
+
+@keyframes rotate{
+  0%{transform:rotate(0deg);}
+ 
+	/* 25%{transform:rotate(90deg);} */
+ 
+	/* 50%{transform:rotate(180deg);} */
+ 	100%{transform:rotate(360deg);}
+
+	/* 75%{transform:rotate(270deg);} */
+ 
+}
